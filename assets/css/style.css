@@ -1,0 +1,28 @@
+:root {
+    --dgreen: rgb(0, 48, 0);
+    --ltan: rgb(255, 226, 188);
+}
+
+.header {
+    background-color: var(--dgreen);
+    color: var(--ltan);
+    width: 100%;
+    padding-top: 5px;
+}
+
+h1 {
+    background-color: var(--ltan);
+    color: var(--dgreen);
+    margin: 0;
+    margin-right: 83%;
+    padding: 15px 0;
+}
+
+.header ul {
+    display: flex;
+    text-decoration: underline;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 0 0 0 70%;
+    list-style: none;
+}
