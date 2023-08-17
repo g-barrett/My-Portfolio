@@ -37,7 +37,7 @@ h1 {
 .banner {
     background-color: var(--ltan);
     padding-bottom: 5px;
-    width: 1324px;
+    width: 100%;
     height: 300px;
     margin: 0;
 }
@@ -51,6 +51,15 @@ h2 {
 div p {
     margin-left: 150px;
     text-align: center;
+}
+
+.first-project {
+    max-width: 65%;
+    max-height: 65%;
+} 
+
+.card {
+    
 }
 
 .content {
