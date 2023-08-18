@@ -3,6 +3,10 @@
     --ltan: rgb(255, 226, 188);
     --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     --green: rgb(4, 75, 4);
+    --dbrown: rgb(110, 69, 7)
+}
+body {
+    background-color: var(--ltan);
 }
 
 .header {
@@ -38,7 +42,7 @@ h1 {
     background-color: var(--ltan);
     padding-bottom: 5px;
     width: 100%;
-    height: 300px;
+    height: auto;
     margin: 0;
 }
 
@@ -56,10 +60,13 @@ div p {
 .first-project {
     max-width: 65%;
     max-height: 65%;
+    align-items: center;
 } 
 
 .card {
-    
+    padding: 15px;
+    border: 5px solid var(--dgreen);
+    margin: 20px;
 }
 
 .content {
@@ -77,11 +84,23 @@ div p {
     list-style: none;
 }
 
-/**media queries for different screen sizes**/
-@media {
-
+.card:hover {
+    background-color: var(--dbrown);
 }
 
-@media {
+.first-project:hover {
+    background-color: var(--dbrown);
+}
 
+/**media queries for different screen sizes**/
+@media screen and (max-width: 992px) {
+    .card {
+        max-width: 50%;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
 }
